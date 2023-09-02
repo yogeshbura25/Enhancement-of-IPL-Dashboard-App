@@ -16,7 +16,7 @@ class TeamMatches extends Component {
   }
 
   componentDidMount() {
-    // FIX12: The method to get data should be called to get data from API
+
     this.getTeamMatches()
   }
 
@@ -48,7 +48,7 @@ class TeamMatches extends Component {
         this.getFormattedData(eachMatch),
       ),
     }
-    // FIX13: The state value of isLoading should be set to false to display the response
+ 
     this.setState({teamMatchesData: formattedData, isLoading: false})
   }
 
